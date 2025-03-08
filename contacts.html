@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacts</title>
+  <style>
+    body {
+      background-color: #fff9c4; /* light yellow */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    nav {
+      background-color: #558b2f; /* greenish */
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      background-color: #e8f5e9;
+      padding: 20px;
+      border: 2px solid #33691e;
+    }
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    form input[type="submit"] {
+      background-color: #1976d2; /* blue */
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      margin-top: 15px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    form input[type="submit"]:hover {
+      background-color: #0d47a1;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="personal_experience.html">Personal Experience</a>
+    <a href="contacts.html">Contacts</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="skills.html">Skills</a>
+    <a href="referees.html">Referees</a>
+  </nav>
+
+  <h1>Contact Me</h1>
+  <form action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone">
+
+    <label for="subject">Message Subject:</label>
+    <input type="text" id="subject" name="subject">
+
+    <label for="message">Enter Your Message:</label>
+    <textarea id="message" name="message" rows="5"></textarea>
+
+    <label>
+      <input type="checkbox" name="sendCopy">
+      E-mail a copy of this message to your own address.
+    </label>
+
+    <input type="submit" value="Send">
+  </form>
+</body>
+</html>
